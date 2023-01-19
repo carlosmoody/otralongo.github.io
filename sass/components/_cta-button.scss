@@ -13,7 +13,7 @@ a.cta-button {
         margin-top: 20px;
         margin-bottom: 20px;
         border-radius: 30px;
-        box-shadow: 0px 7px 12px rgba(0, 0, 0, 0.2);
+        @include standard-shadow;
 
         &:hover {
             background: linear-gradient(0deg, lighten($color-primary,3%) 0%, lighten($color-secondary,3%) 100%);

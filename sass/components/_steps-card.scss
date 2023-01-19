@@ -1,0 +1,45 @@
+.operating__steps__card {
+    padding-top: 25px;
+    padding-bottom: 25px;
+    background-color: $color-lightgrey;
+    width: 86%;
+    border-radius: 20px;
+    @include standard-shadow;
+
+    &__content {
+        position: relative;
+        left: -13px;
+        display: flex;
+        align-items: center;
+        gap: 20px;        
+        
+        &__number {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 25px;
+            width: 25px;
+            color: white;
+            font-size: 14px;
+            background-color: $color-primary;
+            border-radius: 50px;
+        }
+        
+        &__icon {
+            color: $color-mediumgrey;
+        }
+        
+        &__text {
+            font-weight: 500;
+        }
+    }
+
+    &:hover {
+        background-color: lighten($color-primary, 36%);
+
+        & .operating__steps__card__content__icon {
+            color: $color-primary;
+        }
+    }
+
+}
