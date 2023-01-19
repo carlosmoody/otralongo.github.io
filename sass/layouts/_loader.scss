@@ -1,0 +1,38 @@
+.splash-screen {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    background-color: white;
+    z-index: 998;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    animation: fade-out 1500ms forwards;
+    animation-iteration-count: 1;
+    animation-delay: 3000ms;
+
+    &__loader {
+        border: 5px dotted $color-primary;
+        border-radius: 50%;
+        width: 48px;
+        height: 48px;
+        animation: rotation 2s linear infinite;
+          
+        @keyframes rotation {
+        0% { transform: rotate(0deg); }
+        100% { transform: rotate(360deg); }
+        }
+    }
+}
+
+@keyframes fade-out {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        left: -9999px;
+    }
+}
