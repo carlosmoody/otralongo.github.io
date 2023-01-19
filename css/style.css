@@ -110,6 +110,9 @@ a.cta-button:hover {
   height: 251px;
   display: flex;
   flex-direction: column;
+  position: relative;
+  box-shadow: 0px 7px 12px rgba(0, 0, 0, 0.2);
+  border-radius: 15px;
 }
 .restaurants__list__card__cover {
   border-top-left-radius: 15px;
@@ -117,8 +120,22 @@ a.cta-button:hover {
   width: 100%;
   height: 70%;
   object-fit: cover;
-  background-size: cover;
-  background-position: center;
+  object-position: center;
+}
+.restaurants__list__card__cover__new {
+  position: absolute;
+  top: 13px;
+  right: 13px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80px;
+  height: 30px;
+  color: #2c9c81;
+  font-weight: 500;
+  font-size: 14px;
+  background-color: #c1ede2;
+  border-radius: 2px;
 }
 .restaurants__list__card__content {
   background-color: white;
@@ -147,6 +164,9 @@ a.cta-button:hover {
 }
 .restaurants__list__card__content__icon {
   color: #7E7E7E;
+}
+.restaurants__list__card__content__icon:hover {
+  color: #9356DC;
 }
 
 header {
@@ -229,6 +249,10 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
+  gap: 20px;
+}
+.restaurants__list:last-child {
+  margin-bottom: 64px;
 }
 
 /*# sourceMappingURL=style.css.map */
