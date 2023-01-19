@@ -25,18 +25,22 @@ img {
 
 a:link {
   text-decoration: none;
+  color: white;
 }
 
 a:visited {
   text-decoration: none;
+  color: white;
 }
 
 a:hover {
   text-decoration: none;
+  color: white;
 }
 
 a:active {
   text-decoration: none;
+  color: white;
 }
 
 h1 {
@@ -253,6 +257,32 @@ header {
 }
 .restaurants__list:last-child {
   margin-bottom: 64px;
+}
+
+footer {
+  background-color: #353535;
+  padding-top: 30px;
+  padding-left: 25px;
+  padding-bottom: 38px;
+}
+
+.footer__logo {
+  height: 18px;
+  filter: invert(100%);
+}
+.footer__container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 15px;
+}
+.footer__container__link {
+  display: flex;
+  gap: 12px;
+}
+.footer__container__link__text {
+  font-weight: 500;
+  font-size: 16px;
 }
 
 /*# sourceMappingURL=style.css.map */
