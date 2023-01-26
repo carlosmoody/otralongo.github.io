@@ -48,10 +48,6 @@ a:active {
   color: white;
 }
 
-main {
-  position: relative;
-}
-
 h1 {
   font-size: 24px;
   font-weight: 700;
@@ -91,8 +87,8 @@ a.cta-button {
   justify-content: center;
   align-items: center;
   height: 50px;
-  width: auto;
-  background: linear-gradient(0deg, #9356DC 0%, #FF79DA 100%);
+  width: fit-content;
+  background: linear-gradient(355deg, #9356DC 0%, #FF79DA 100%);
   padding-left: 20px;
   padding-right: 20px;
   margin-top: 20px;
@@ -100,8 +96,12 @@ a.cta-button {
   border-radius: 30px;
   box-shadow: 0px 7px 12px rgba(0, 0, 0, 0.2);
 }
+a.cta-button.large {
+  padding-left: 50px;
+  padding-right: 50px;
+}
 a.cta-button:hover {
-  background: linear-gradient(0deg, #9b63df 0%, #ff88de 100%);
+  background: linear-gradient(355deg, #9b63df 0%, #ff88de 100%);
   box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.4);
 }
 
@@ -209,7 +209,7 @@ a.cta-button:hover {
   color: #9356DC;
 }
 
-.menu-block__content__dish-button {
+.dish-button {
   height: 68px;
   width: 100%;
   border-radius: 16px;
@@ -219,13 +219,13 @@ a.cta-button:hover {
   overflow: hidden;
   cursor: pointer;
 }
-.menu-block__content__dish-button:hover .menu-block__content__dish-button__validate {
+.dish-button:hover .dish-button__validate {
   width: 90px;
 }
-.menu-block__content__dish-button:hover .fa-circle-check {
+.dish-button:hover .fa-circle-check {
   transform: rotate(0deg);
 }
-.menu-block__content__dish-button__name {
+.dish-button__name {
   width: 100%;
   padding-left: 10px;
   overflow: hidden;
@@ -234,12 +234,12 @@ a.cta-button:hover {
   justify-content: center;
   gap: 4px;
 }
-.menu-block__content__dish-button__name > h4, .menu-block__content__dish-button__name h5 {
+.dish-button__name > h4, .dish-button__name h5 {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
 }
-.menu-block__content__dish-button__price {
+.dish-button__price {
   width: 68px;
   display: flex;
   justify-content: center;
@@ -247,11 +247,11 @@ a.cta-button:hover {
   flex-shrink: 0;
   padding-bottom: 14px;
 }
-.menu-block__content__dish-button__price > p {
+.dish-button__price > p {
   font-weight: 500;
   font-size: 15px;
 }
-.menu-block__content__dish-button__validate {
+.dish-button__validate {
   background-color: #99E2D0;
   width: 0px;
   transition: all 400ms ease-in-out;
@@ -438,29 +438,43 @@ footer {
   border-top-right-radius: 40px;
   background-color: #F7F7F7;
   position: relative;
-  top: -40px;
+  margin-top: -40px;
 }
 .menu-block__title {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-bottom: 32px;
   padding-right: 10px;
 }
 .menu-block__content {
   display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+.menu-block__content__part {
+  width: 100%;
+  display: flex;
   flex-direction: column;
   position: relative;
+  gap: 12px;
+  padding-top: 32px;
+  min-width: 250px;
+  max-width: 500px;
 }
-.menu-block__content__subtitle {
-  padding-bottom: 13px;
-}
-.menu-block__content__subtitle > div {
+.menu-block__content__part__subtitle > div {
   margin-top: 6px;
   width: 40px;
   height: 3px;
   background-color: #99E2D0;
   border: none;
+}
+.menu-block__order-button {
+  display: flex;
+  justify-content: center;
+  padding-top: 40px;
+  padding-bottom: 40px;
 }
 
 /*# sourceMappingURL=style.css.map */
