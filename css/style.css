@@ -187,6 +187,7 @@ a.cta-button:hover {
   justify-content: space-between;
   padding-left: 14px;
   padding-right: 24px;
+  position: relative;
 }
 .restaurants__list__card__content__text {
   display: flex;
@@ -201,12 +202,6 @@ a.cta-button:hover {
   font-weight: 300;
   font-size: 17px;
   color: black;
-}
-.restaurants__list__card__content__icon {
-  color: #7E7E7E;
-}
-.restaurants__list__card__content__icon:hover {
-  color: #9356DC;
 }
 
 .dish-button {
@@ -264,6 +259,26 @@ a.cta-button:hover {
   color: white;
   transform: rotate(-260deg);
   transition: all 400ms ease-in-out;
+}
+
+.fav-heart .full-fav-heart {
+  position: absolute;
+  right: 25px;
+  color: #9356DC;
+  opacity: 0;
+  transition: all 200ms ease-in;
+}
+.fav-heart .empty-fav-heart {
+  position: absolute;
+  right: 25px;
+  color: #7E7E7E;
+  transition: all 200ms ease-in;
+}
+.fav-heart:hover .full-fav-heart {
+  opacity: 1;
+}
+.fav-heart:hover .empty-fav-heart {
+  color: #9356DC;
 }
 
 .splash-screen {

@@ -42,6 +42,7 @@
         justify-content: space-between;
         padding-left: 14px;
         padding-right: 24px;
+        position: relative;
 
         &__text {
             display: flex;
@@ -57,14 +58,6 @@
                 font-weight: 300;
                 font-size: 17px;
                 color: black;
-            }
-        }
-
-        &__icon {
-            color: $color-mediumgrey;
-
-            &:hover {
-                color: $color-primary;
             }
         }
     }
