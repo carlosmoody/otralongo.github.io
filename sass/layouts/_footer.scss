@@ -29,3 +29,13 @@ footer {
         }
     }
 }
+
+@media screen and (min-width: $bp-tablet) {
+    
+.footer__container {
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 40px;
+}
+
+}

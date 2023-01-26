@@ -11,8 +11,18 @@
 
     &__steps {
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
         align-items: center;
-        gap: 23px;
+        gap: 30px;
     }
+}
+
+@media screen and (min-width: $bp-tablet) {
+    
+    .operating__steps {
+        margin-left: 25px;
+    }
+    
 }
