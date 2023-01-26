@@ -445,6 +445,7 @@ footer {
   justify-content: space-between;
   align-items: center;
   padding-bottom: 32px;
+  padding-right: 10px;
 }
 .menu-block__content {
   display: flex;
