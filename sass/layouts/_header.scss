@@ -1,10 +1,11 @@
 header {
-    position: sticky;
+    // position: sticky;
     z-index: 999;
 }
 
 .header {
     &__container {
+        position: relative;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -13,6 +14,12 @@ header {
 
         & > img {
             height: 30px;
+        }
+
+        & > a {
+            color: black;
+            position: absolute;
+            left: 20px;
         }
     }
 }

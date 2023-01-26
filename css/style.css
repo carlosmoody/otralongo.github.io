@@ -185,7 +185,7 @@ a.cta-button:hover {
   align-items: center;
   animation: fade-out 1500ms forwards;
   animation-iteration-count: 1;
-  animation-delay: 3000ms;
+  animation-delay: 300ms;
 }
 .splash-screen__loader {
   border: 5px dotted #9356DC;
@@ -213,11 +213,11 @@ a.cta-button:hover {
   }
 }
 header {
-  position: sticky;
   z-index: 999;
 }
 
 .header__container {
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -226,6 +226,11 @@ header {
 }
 .header__container > img {
   height: 30px;
+}
+.header__container > a {
+  color: black;
+  position: absolute;
+  left: 20px;
 }
 
 .location {
