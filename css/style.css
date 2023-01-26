@@ -101,6 +101,7 @@ a.cta-button:hover {
 }
 .operating__steps__card__content__text {
   font-weight: 500;
+  user-select: none;
 }
 .operating__steps__card:hover {
   background-color: #f4eefc;
@@ -242,6 +243,7 @@ header {
 }
 .location > p {
   font-weight: 500;
+  user-select: none;
 }
 
 .discover {
