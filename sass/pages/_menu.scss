@@ -1,8 +1,12 @@
 .menu-cover {
 
+    max-height: 250px;
+
     & > img {
         object-fit: cover;
         object-position: center;
+        aspect-ratio: 16 / 9;
+        width: 100%;
     }
 }
 
@@ -76,10 +80,10 @@
     }
 }
 
-@media screen and (min-width: $bp-tablet) {
+// @media screen and (min-width: $bp-tablet) {
     
-    .menu-block {
-        margin-top: -300px;
-    }
+//     .menu-block {
+//         margin-top: -300px;
+//     }
 
-}
+// }

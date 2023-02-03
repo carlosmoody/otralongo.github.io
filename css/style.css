@@ -475,9 +475,14 @@ footer {
     padding-right: 20px;
   }
 }
+.menu-cover {
+  max-height: 250px;
+}
 .menu-cover > img {
   object-fit: cover;
   object-position: center;
+  aspect-ratio: 16/9;
+  width: 100%;
 }
 
 .menu-block {
@@ -543,12 +548,6 @@ footer {
   justify-content: center;
   padding-top: 40px;
   padding-bottom: 40px;
-}
-
-@media screen and (min-width: 768px) {
-  .menu-block {
-    margin-top: -300px;
-  }
 }
 
 /*# sourceMappingURL=style.css.map */
