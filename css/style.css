@@ -102,7 +102,7 @@ a.cta-button.large {
 }
 a.cta-button:hover {
   background: linear-gradient(355deg, #9b63df 0%, #ff88de 100%);
-  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.4);
+  box-shadow: 0px 7px 12px rgba(0, 0, 0, 0.27);
 }
 
 .operating__steps__card {
@@ -271,12 +271,14 @@ a.cta-button:hover {
   color: #9356DC;
   opacity: 0;
   transition: all 200ms ease-in;
+  cursor: pointer;
 }
 .fav-heart .empty-fav-heart {
   position: absolute;
   right: 25px;
   color: #7E7E7E;
   transition: all 200ms ease-in;
+  cursor: pointer;
 }
 .fav-heart:hover .full-fav-heart {
   opacity: 1;
@@ -353,13 +355,13 @@ header {
   background-color: hsla(0deg, 0%, 20.7843137255%, 0.1);
   padding-top: 10px;
   padding-bottom: 10px;
+  cursor: pointer;
 }
 .location > i, .location p {
   color: #353535;
 }
 .location > p {
   font-weight: 500;
-  user-select: none;
 }
 
 .discover {

@@ -7,6 +7,7 @@
     background-color: hsla(hue($color-grey), saturation($color-grey), lightness($color-grey), 0.1);
     padding-top: 10px;
     padding-bottom: 10px;
+    cursor: pointer;
 
     & > i, p {
         color: $color-grey;
@@ -14,6 +15,5 @@
 
     & > p {
         font-weight: 500;
-        user-select: none;
     }
 }
