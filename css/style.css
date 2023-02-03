@@ -519,20 +519,20 @@ footer {
   max-width: 500px;
   opacity: 0;
 }
-.menu-block__content__part.part-1 {
+.menu-block__content__part:nth-child(1) {
   animation: fade-in 800ms forwards;
   animation-iteration-count: 1;
   animation-delay: 100ms;
 }
-.menu-block__content__part.part-2 {
+.menu-block__content__part:nth-child(2) {
   animation: fade-in 800ms forwards;
   animation-iteration-count: 1;
-  animation-delay: 300ms;
+  animation-delay: 400ms;
 }
-.menu-block__content__part.part-3 {
+.menu-block__content__part:nth-child(3) {
   animation: fade-in 800ms forwards;
   animation-iteration-count: 1;
-  animation-delay: 500ms;
+  animation-delay: 700ms;
 }
 .menu-block__content__part__subtitle > div {
   margin-top: 6px;
