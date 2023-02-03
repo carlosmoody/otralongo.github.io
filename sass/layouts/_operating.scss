@@ -11,8 +11,8 @@
 
     &__steps {
         display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
+        flex-direction: column;
+        // flex-wrap: wrap;
         justify-content: center;
         align-items: center;
         gap: 30px;

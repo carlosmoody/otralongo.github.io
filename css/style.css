@@ -1,6 +1,37 @@
+@keyframes fade-out {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    left: -9999px;
+  }
+}
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 html {
   box-sizing: border-box;
   font-size: 16px;
+}
+
+main {
+  width: 100%;
+  max-width: 1024px;
+  margin: auto;
 }
 
 *, *:before, *:after {
@@ -307,24 +338,7 @@ a.cta-button:hover {
   height: 48px;
   animation: rotation 2s linear infinite;
 }
-@keyframes rotation {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-}
 
-@keyframes fade-out {
-  0% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-    left: -9999px;
-  }
-}
 header {
   z-index: 999;
 }
@@ -393,8 +407,7 @@ header {
 }
 .operating__steps {
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 30px;
@@ -504,6 +517,22 @@ footer {
   padding-top: 32px;
   min-width: 250px;
   max-width: 500px;
+  opacity: 0;
+}
+.menu-block__content__part.part-1 {
+  animation: fade-in 800ms forwards;
+  animation-iteration-count: 1;
+  animation-delay: 100ms;
+}
+.menu-block__content__part.part-2 {
+  animation: fade-in 800ms forwards;
+  animation-iteration-count: 1;
+  animation-delay: 300ms;
+}
+.menu-block__content__part.part-3 {
+  animation: fade-in 800ms forwards;
+  animation-iteration-count: 1;
+  animation-delay: 500ms;
 }
 .menu-block__content__part__subtitle > div {
   margin-top: 6px;
