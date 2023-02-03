@@ -2,6 +2,7 @@
 
     & .full-fav-heart {
         background: -webkit-gradient(linear, left bottom, left top, from($color-secondary), to($color-primary));
+        background-clip: text;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         opacity: 0;
