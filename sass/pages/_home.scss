@@ -59,11 +59,11 @@
 }
 
 @media screen and (min-width: $bp-tablet) {
-    
-    .operating__steps {
-        margin-left: 25px;
+
+    .operating > h1 {
+        text-align: center;
     }
-    
+
 }
 
 .restaurants {
@@ -91,6 +91,10 @@
 }
 
 @media screen and (min-width: $bp-tablet) {
+
+    .restaurants {
+        text-align: center;
+    }
     
     .restaurants__list {
         padding-left: 20px;

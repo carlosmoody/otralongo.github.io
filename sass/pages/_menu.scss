@@ -24,16 +24,16 @@
 
     &__title {
         display: flex;
-        justify-content: space-between;
+        justify-content: space-around;
         align-items: center;
         padding-right: 10px;
     }
 
     &__content {
         display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: center;
+        flex-direction: column;
+        // flex-wrap: wrap;
+        align-items: center;
         gap: 20px;
         
 

@@ -31,7 +31,6 @@ html {
 
 main, footer {
   width: 100%;
-  max-width: 1024px;
   margin: auto;
 }
 
@@ -442,8 +441,8 @@ footer {
 }
 
 @media screen and (min-width: 768px) {
-  .operating__steps {
-    margin-left: 25px;
+  .operating > h1 {
+    text-align: center;
   }
 }
 .restaurants {
@@ -468,6 +467,9 @@ footer {
 }
 
 @media screen and (min-width: 768px) {
+  .restaurants {
+    text-align: center;
+  }
   .restaurants__list {
     padding-left: 20px;
     padding-right: 20px;
@@ -496,15 +498,14 @@ footer {
 }
 .menu-block__title {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   padding-right: 10px;
 }
 .menu-block__content {
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
   gap: 20px;
 }
 .menu-block__content__part {
