@@ -49,14 +49,13 @@
             max-width: 500px;
             opacity: 0;
 
-            &.part-1 {
-                @include fade-in(100ms);
-            }
-            &.part-2 {
-                @include fade-in(300ms);
-            }
-            &.part-3 {
-                @include fade-in(500ms);
+            $menu-delay: 100ms;
+
+            @each $part in (part-1, part-2, part-3) {
+                &.#{$part} {
+                    @include fade-in($menu-delay);
+                }
+                $menu-delay: $menu-delay + 200;
             }
             
             &__subtitle {
