@@ -298,16 +298,14 @@ a.cta-button:hover {
 }
 
 .fav-heart .full-fav-heart {
-  position: absolute;
-  right: 25px;
-  color: #9356DC;
+  background: -webkit-gradient(linear, left bottom, left top, from(#FF79DA), to(#9356DC));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   opacity: 0;
   transition: all 200ms ease-in;
   cursor: pointer;
 }
 .fav-heart .empty-fav-heart {
-  position: absolute;
-  right: 25px;
   color: #7E7E7E;
   transition: all 200ms ease-in;
   cursor: pointer;
@@ -316,7 +314,7 @@ a.cta-button:hover {
   opacity: 1;
 }
 .fav-heart:hover .empty-fav-heart {
-  color: #9356DC;
+  color: transparent;
 }
 
 .splash-screen {
@@ -481,7 +479,6 @@ footer {
 .menu-cover > img {
   object-fit: cover;
   object-position: center;
-  aspect-ratio: 16/9;
   width: 100%;
 }
 
@@ -548,6 +545,12 @@ footer {
   justify-content: center;
   padding-top: 40px;
   padding-bottom: 40px;
+}
+
+@media screen and (min-width: 768px) {
+  .menu-block {
+    margin-top: 200px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

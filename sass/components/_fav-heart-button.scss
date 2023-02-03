@@ -1,17 +1,15 @@
 .fav-heart { 
 
     & .full-fav-heart {
-        position: absolute;
-        right: 25px;
-        color: $color-primary;
+        background: -webkit-gradient(linear, left bottom, left top, from($color-secondary), to($color-primary));
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
         opacity: 0;
         transition: all 200ms ease-in;
         cursor: pointer;
     }
 
     & .empty-fav-heart {
-        position: absolute;
-        right: 25px;
         color: $color-mediumgrey;
         transition: all 200ms ease-in;
         cursor: pointer;
@@ -23,7 +21,7 @@
         }
 
         & .empty-fav-heart {
-            color: $color-primary;
+            color: transparent;
         }
     }
 }
