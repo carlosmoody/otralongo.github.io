@@ -5,6 +5,8 @@
     width: 86%;
     border-radius: 20px;
     @include standard-shadow;
+    min-width: 250px;
+    max-width: 400px;
 
     &__content {
         position: relative;
@@ -31,6 +33,7 @@
         
         &__text {
             font-weight: 500;
+            user-select: none;
         }
     }
 

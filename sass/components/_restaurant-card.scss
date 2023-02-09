@@ -6,6 +6,8 @@
     position: relative;
     @include standard-shadow;
     border-radius: 15px;
+    min-width: 250px;
+    max-width: 400px;
 
     &__cover {
         border-top-left-radius: 15px;
@@ -42,6 +44,7 @@
         justify-content: space-between;
         padding-left: 14px;
         padding-right: 24px;
+        position: relative;
 
         &__text {
             display: flex;
@@ -57,14 +60,6 @@
                 font-weight: 300;
                 font-size: 17px;
                 color: black;
-            }
-        }
-
-        &__icon {
-            color: $color-mediumgrey;
-
-            &:hover {
-                color: $color-primary;
             }
         }
     }

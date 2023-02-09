@@ -1,0 +1,28 @@
+.fav-heart { 
+
+    & .full-fav-heart {
+        background: -webkit-gradient(linear, left bottom, left top, from($color-secondary), to($color-primary));
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        opacity: 0;
+        transition: all 200ms ease-in;
+        cursor: pointer;
+    }
+
+    & .empty-fav-heart {
+        color: $color-mediumgrey;
+        transition: all 200ms ease-in;
+        cursor: pointer;
+    }
+
+    &:hover {
+        & .full-fav-heart {
+            opacity: 1;
+        }
+
+        & .empty-fav-heart {
+            color: transparent;
+        }
+    }
+}

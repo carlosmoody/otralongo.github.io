@@ -1,3 +1,14 @@
-@mixin standard-shadow {
-    box-shadow: 0px 7px 12px rgba(0, 0, 0, 0.2);
+@mixin standard-shadow($opacity: 0.2) {
+    box-shadow: 0px 7px 12px rgba(0, 0, 0, $opacity);
+}
+
+@mixin fade-in($delay: 0ms) {
+    @for $i from 1 through $number-of-part {
+        &:nth-child(#{$i}) {
+            animation: fade-in 800ms forwards;
+            animation-iteration-count: 1;
+            animation-delay: $delay;
+        }
+        $delay: $delay + 300;
+    }
 }

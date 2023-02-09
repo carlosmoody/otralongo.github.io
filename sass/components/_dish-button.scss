@@ -1,0 +1,65 @@
+.dish-button {
+    height: 68px;
+    width: 100%;
+    border-radius: 16px;
+    background-color: white;
+    @include standard-shadow;
+    display: flex;
+    overflow: hidden;
+    cursor: pointer;
+
+    &:hover {
+        & .dish-button__validate {
+            width: 90px;
+        }
+
+        & .fa-circle-check {
+            transform: rotate(0deg);
+        }
+    }
+
+    &__name {
+        width: 100%;
+        padding-left: 10px;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 4px;
+
+        & > h4, h5 {
+            white-space:nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+    }
+
+    &__price {
+        width: 68px;
+        display: flex;
+        justify-content: center;
+        align-items:end;
+        flex-shrink: 0;
+        padding-bottom: 14px;
+
+        & > p {
+            font-weight: 500;
+            font-size: 15px;
+        }
+    }
+
+    &__validate {
+        background-color: $color-tertiary;
+        width: 0px;
+        transition: all 400ms ease-in-out;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+.fa-circle-check {
+    color: white;
+    transform: rotate(-260deg);
+    transition: all 400ms ease-in-out;
+}
