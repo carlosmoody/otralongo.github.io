@@ -48,15 +48,7 @@
             max-width: 500px;
             opacity: 0;
 
-            $menu-delay: 100ms;
-            $number-of-part: 3;
-
-            @for $i from 1 through $number-of-part {
-                &:nth-child(#{$i}) {
-                    @include fade-in($menu-delay);
-                }
-                $menu-delay: $menu-delay + 300;
-            }
+            @include fade-in($menu-delay);
             
             &__subtitle {
                 

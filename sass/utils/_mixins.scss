@@ -3,7 +3,12 @@
 }
 
 @mixin fade-in($delay: 0ms) {
-    animation: fade-in 800ms forwards;
-    animation-iteration-count: 1;
-    animation-delay: $delay;
+    @for $i from 1 through $number-of-part {
+        &:nth-child(#{$i}) {
+            animation: fade-in 800ms forwards;
+            animation-iteration-count: 1;
+            animation-delay: $delay;
+        }
+        $delay: $delay + 300;
+    }
 }
