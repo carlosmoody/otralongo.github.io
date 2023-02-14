@@ -24,7 +24,6 @@
     justify-content: center;
     align-items: center;
     gap: 20px;
-    // height: 286px;
     background-color: $color-lightgrey;
     padding: 43px 30px 43px 30px;
 
@@ -92,7 +91,7 @@
 
 @media screen and (min-width: $bp-tablet) {
 
-    .restaurants {
+    .restaurants > h1 {
         text-align: center;
     }
     
